@@ -1,1 +1,1 @@
-# torec
+# Plantilla Torec Shopify
