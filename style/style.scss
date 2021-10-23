@@ -1,6 +1,160 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
 $overpass: 'Overpass', sans-serif;
 $openSans: 'Open Sans', sans-serif;
+$texto-soporte: 13px;
+$texto-soporte-dos: 18px;
+$texto-lectura: 14px;
+// Colores
+$principal: #F03C02;
+$gris: #282525;
 * {
     font-family: $openSans;
 } 
+// Estilos generales
+.texto-soporte {
+    font-size: 13px;
+}
+.texto-soporte-dos {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: $overpass;
+}
+a, button, img, input, span {
+    transition: all .3s ease 0s;
+}
+// Header
+.header-area {
+    .header-top {
+        background-color: $principal;
+        color: white;
+        font-size: $texto-soporte;
+        border-bottom: 1px solid rgba(0,0,0,.1);
+        .menu-setting {
+            list-style: outside none none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            .linea::before {
+                position: absolute;
+                content: "";
+                width: 1px;
+                height: 12px;
+                background: white;
+                top: 50%;
+                right: 0;
+                transform: translatey(-50%);
+            }
+            li {
+                display: inline-block;
+                position: relative;
+                padding-right: 18px;
+                margin-right: 18px;
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .header-middle {
+        background: $principal;
+        .buscador-principal {
+            input {
+                border-top : 1px solid $principal;
+                border-bottom : 1px solid $principal;
+                border-left : 1px solid $principal;
+            }
+            #btn-buscar {
+                background: $gris;
+                color: white;
+                border: 1px solid $principal;
+                i {
+                    font-size: 1.3em;
+                }
+            }
+        }
+        .costumer-services {
+            color:white;
+            i {
+                font-size: 3em;
+                margin-right: 8px;
+            }
+            div span{
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+    .header-bottom {
+        font-size: $texto-soporte;
+        border-bottom: 1px solid rgba(0,0,0,.1);
+        .menu-principal {
+            list-style: outside none none;
+            margin: 0;
+            padding: 0;
+            li {
+                margin-right: 8px;
+                display: inline-block;
+                position: relative;
+                a {
+                    display: block;
+                    padding: 13px 22px 13px 22px;
+                    font-size: 15px;
+                    line-height: 30px;
+                    text-transform: capitalize;
+                    font-weight: 600;
+                    font-family: Overpass,sans-serif;
+                    text-decoration: none;
+                    color: $gris;
+                    &:hover {
+                        color: $principal;
+                    }
+                }
+            }
+        }
+    }
+    .mini-carrito {
+        position: relative;
+        a {
+            color: $gris;
+            text-decoration: none;
+            &:hover {
+                color: $principal;
+            }
+            i {
+                font-size: 27px;
+                padding-right: 8px;
+                vertical-align: middle;
+            }
+            .money {
+                font-size: 16px;
+                padding-right: 0;
+                vertical-align: middle;
+                font-weight: 600;
+            }
+        }
+        .cart-quantity {
+            position: absolute;
+            left: 15px;
+            width: 19px;
+            height: 19px;
+            line-height: 19px;
+            text-align: center;
+            background: $principal;
+            border-radius: 50%;
+            top: 0;
+            font-size: 11px;
+        }
+    }
+}
+main {
+    .banners {
+        a {
+            display: block;
+            img {
+                object-fit: cover;
+                width: 100%;
+            }
+        }
+    }
+}

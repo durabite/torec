@@ -2,4 +2,175 @@
 * {
   font-family: "Open Sans", sans-serif;
 }
+
+.texto-soporte {
+  font-size: 13px;
+}
+
+.texto-soporte-dos {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Overpass", sans-serif;
+}
+
+a, button, img, input, span {
+  -webkit-transition: all .3s ease 0s;
+  transition: all .3s ease 0s;
+}
+
+.header-area .header-top {
+  background-color: #F03C02;
+  color: white;
+  font-size: 13px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.header-area .header-top .menu-setting {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-area .header-top .menu-setting .linea::before {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 12px;
+  background: white;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translatey(-50%);
+          transform: translatey(-50%);
+}
+
+.header-area .header-top .menu-setting li {
+  display: inline-block;
+  position: relative;
+  padding-right: 18px;
+  margin-right: 18px;
+}
+
+.header-area .header-top .menu-setting li a {
+  color: white;
+  text-decoration: none;
+}
+
+.header-area .header-middle {
+  background: #F03C02;
+}
+
+.header-area .header-middle .buscador-principal input {
+  border-top: 1px solid #F03C02;
+  border-bottom: 1px solid #F03C02;
+  border-left: 1px solid #F03C02;
+}
+
+.header-area .header-middle .buscador-principal #btn-buscar {
+  background: #282525;
+  color: white;
+  border: 1px solid #F03C02;
+}
+
+.header-area .header-middle .buscador-principal #btn-buscar i {
+  font-size: 1.3em;
+}
+
+.header-area .header-middle .costumer-services {
+  color: white;
+}
+
+.header-area .header-middle .costumer-services i {
+  font-size: 3em;
+  margin-right: 8px;
+}
+
+.header-area .header-middle .costumer-services div span {
+  margin: 0;
+  padding: 0;
+}
+
+.header-area .header-bottom {
+  font-size: 13px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.header-area .header-bottom .menu-principal {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-area .header-bottom .menu-principal li {
+  margin-right: 8px;
+  display: inline-block;
+  position: relative;
+}
+
+.header-area .header-bottom .menu-principal li a {
+  display: block;
+  padding: 13px 22px 13px 22px;
+  font-size: 15px;
+  line-height: 30px;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-family: Overpass,sans-serif;
+  text-decoration: none;
+  color: #282525;
+}
+
+.header-area .header-bottom .menu-principal li a:hover {
+  color: #F03C02;
+}
+
+.header-area .mini-carrito {
+  position: relative;
+}
+
+.header-area .mini-carrito a {
+  color: #282525;
+  text-decoration: none;
+}
+
+.header-area .mini-carrito a:hover {
+  color: #F03C02;
+}
+
+.header-area .mini-carrito a i {
+  font-size: 27px;
+  padding-right: 8px;
+  vertical-align: middle;
+}
+
+.header-area .mini-carrito a .money {
+  font-size: 16px;
+  padding-right: 0;
+  vertical-align: middle;
+  font-weight: 600;
+}
+
+.header-area .mini-carrito .cart-quantity {
+  position: absolute;
+  left: 15px;
+  width: 19px;
+  height: 19px;
+  line-height: 19px;
+  text-align: center;
+  background: #F03C02;
+  border-radius: 50%;
+  top: 0;
+  font-size: 11px;
+}
+
+main .banners a {
+  display: block;
+}
+
+main .banners a img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
 /*# sourceMappingURL=style.css.map */
