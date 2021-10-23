@@ -7,6 +7,7 @@ $texto-lectura: 14px;
 // Colores
 $principal: #F03C02;
 $gris: #282525;
+$gris-claro: #ededed;
 * {
     font-family: $openSans;
 } 
@@ -25,7 +26,7 @@ a, button, img, input, span {
 // Header
 .header-area {
     .header-top {
-        background-color: $principal;
+        background-color: $gris;
         color: white;
         font-size: $texto-soporte;
         border-bottom: 1px solid rgba(0,0,0,.1);
@@ -154,6 +155,36 @@ main {
             img {
                 object-fit: cover;
                 width: 100%;
+            }
+        }
+    }
+    .products {
+        .products-container {
+            .product {
+                border: 1px solid $gris-claro;
+                width: 33%;
+                box-sizing: border-box;
+                border-radius: 3px;
+                .image-product {
+                    border-bottom: 1px solid $gris-claro;
+                    display: block;
+                }
+                .texto-categoria {
+                    display: block;
+                    text-decoration: none;
+                }
+                .titulo-product {
+                    display: block;
+                    text-decoration: none;
+                }
+                .precios {
+                    .precio-decuento {
+                        color: red;
+                    }
+                    .precio {
+                        color: $principal;
+                    }
+                }
             }
         }
     }
