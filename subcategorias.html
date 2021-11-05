@@ -5,40 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tablas Categorias</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Overpass:wght@100;200;300;400;600;700;800;900&display=swap" rel="stylesheet"> 
+    <style>
+        /* Fuente ya instalada */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background: #F6F6F6;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Overpass', sans-serif;
+        }
+    </style>
 </head>
 <body>
-    <h1>Tornillos</h1>
-    <p>El <b>tornillo</b> es una pieza metálica que tiene como función unir dos o más elementos. Esta pieza está compuesta principalmente por tres partes: cabeza, cuello y rosca.</p>
+
+    <h1>Tuercas</h1>
+    <p> Un <b>remache o roblón</b> es un elemento de fijación que se emplea para unir de forma permanente dos o más piezas. Consiste en un tubo cilíndrico que en su fin dispone de una cabeza. Las cabezas tienen un diámetro mayor que el resto del remache, para que así al introducir este en un agujero pueda ser encajado</p>
     <!-- Categorias -->
     <div class="categorias">
         <!-- Categoria 1 -->
         <div class="categoria">
-            <a class="link-categoria" href="#">
-                <img class="img-categoria" src="https://sc04.alicdn.com/kf/Ha9764db26efe40bfa7e0d3f5a7fe09ffj.jpg" alt="">
-                <h3 class="titulo-categoria">Tornillo Hexagono Interior</h3>
+            <a class="link-categoria" href="https://www.torec.mx/collections/repop">
+                <img class="img-categoria" src="https://cdn.shopify.com/s/files/1/2789/6338/files/torec-demo_600x600.png" alt="">
+                <h3 class="titulo-categoria">Remache Pop!</h3>
             </a>
         </div>
-
         <!-- Categoria 2 -->
         <div class="categoria">
-            <a class="link-categoria" href="#">
-                <img class="img-categoria" src="https://sc04.alicdn.com/kf/Ha9764db26efe40bfa7e0d3f5a7fe09ffj.jpg" alt="">
-                <h3 class="titulo-categoria">Tornillo Hexagono Interior</h3>
+            <a class="link-categoria" href="https://www.torec.mx/collections/repopin">
+                <img class="img-categoria" src="https://cdn.shopify.com/s/files/1/2789/6338/files/torec-demo_600x600.png" alt="">
+                <h3 class="titulo-categoria">Remache Pop Inoxidable</h3>
             </a>
         </div>
-
         <!-- Categoria 3 -->
         <div class="categoria">
-            <a class="link-categoria" href="#">
-                <img class="img-categoria" src="https://sc04.alicdn.com/kf/Ha9764db26efe40bfa7e0d3f5a7fe09ffj.jpg" alt="">
-                <h3 class="titulo-categoria">Tornillo Hexagono Interior</h3>
+            <a class="link-categoria" href="https://www.torec.mx/collections/npg">
+                <img class="img-categoria" src="https://cdn.shopify.com/s/files/1/2789/6338/files/torec-demo_600x600.png" alt="">
+                <h3 class="titulo-categoria">Nudo para Cable</h3>
             </a>
         </div>
+        
     </div>
     <style>
         .categorias {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(4, 1fr);
+            justify-content: space-between;
             width: 100%;
         }
         .categoria {
@@ -49,6 +63,7 @@
             border-radius: 3px;
             background: white;
             transition: border 0.5s ease-out ;
+            box-sizing: border-box;
         }
         .categoria:hover {
             border: 1px solid #EF3C02;
